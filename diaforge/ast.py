@@ -274,12 +274,14 @@ class Node:
     # --------------------------------------------------------
 
     x: float | None = None
-
     y: float | None = None
 
     w: float = 220
-
     h: float = 120
+
+    # Whether dimensions were explicitly specified by the user.
+    width_explicit: bool = False
+    height_explicit: bool = False
 
     # --------------------------------------------------------
     # VISUAL STYLE

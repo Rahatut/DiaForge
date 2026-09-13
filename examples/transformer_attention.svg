@@ -1,0 +1,938 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1700" height="1050" viewBox="0 0 1700 1050" role="img" aria-label="Transformer Self-Attention">
+
+        <defs>
+
+            <filter
+                id="node-shadow"
+                x="-30%"
+                y="-30%"
+                width="160%"
+                height="170%"
+            >
+                <feDropShadow
+                    dx="0"
+                    dy="6"
+                    stdDeviation="10"
+                    flood-color="#64748B"
+                    flood-opacity="0.18"
+                />
+            </filter>
+
+            <filter
+                id="small-shadow"
+                x="-30%"
+                y="-30%"
+                width="160%"
+                height="170%"
+            >
+                <feDropShadow
+                    dx="0"
+                    dy="3"
+                    stdDeviation="5"
+                    flood-color="#64748B"
+                    flood-opacity="0.14"
+                />
+            </filter>
+
+            
+                <marker
+                    id="arrow-0284C7"
+                    viewBox="0 0 10 10"
+                    refX="8"
+                    refY="5"
+                    markerWidth="8"
+                    markerHeight="8"
+                    orient="auto"
+                    markerUnits="strokeWidth"
+                >
+                    <path
+                        d="M 0 0 L 10 5 L 0 10 Z"
+                        fill="#0284C7"
+                    />
+                </marker>
+                
+                <marker
+                    id="arrow-0D9488"
+                    viewBox="0 0 10 10"
+                    refX="8"
+                    refY="5"
+                    markerWidth="8"
+                    markerHeight="8"
+                    orient="auto"
+                    markerUnits="strokeWidth"
+                >
+                    <path
+                        d="M 0 0 L 10 5 L 0 10 Z"
+                        fill="#0D9488"
+                    />
+                </marker>
+                
+                <marker
+                    id="arrow-10B981"
+                    viewBox="0 0 10 10"
+                    refX="8"
+                    refY="5"
+                    markerWidth="8"
+                    markerHeight="8"
+                    orient="auto"
+                    markerUnits="strokeWidth"
+                >
+                    <path
+                        d="M 0 0 L 10 5 L 0 10 Z"
+                        fill="#10B981"
+                    />
+                </marker>
+                
+                <marker
+                    id="arrow-16A34A"
+                    viewBox="0 0 10 10"
+                    refX="8"
+                    refY="5"
+                    markerWidth="8"
+                    markerHeight="8"
+                    orient="auto"
+                    markerUnits="strokeWidth"
+                >
+                    <path
+                        d="M 0 0 L 10 5 L 0 10 Z"
+                        fill="#16A34A"
+                    />
+                </marker>
+                
+                <marker
+                    id="arrow-2563EB"
+                    viewBox="0 0 10 10"
+                    refX="8"
+                    refY="5"
+                    markerWidth="8"
+                    markerHeight="8"
+                    orient="auto"
+                    markerUnits="strokeWidth"
+                >
+                    <path
+                        d="M 0 0 L 10 5 L 0 10 Z"
+                        fill="#2563EB"
+                    />
+                </marker>
+                
+                <marker
+                    id="arrow-3B82F6"
+                    viewBox="0 0 10 10"
+                    refX="8"
+                    refY="5"
+                    markerWidth="8"
+                    markerHeight="8"
+                    orient="auto"
+                    markerUnits="strokeWidth"
+                >
+                    <path
+                        d="M 0 0 L 10 5 L 0 10 Z"
+                        fill="#3B82F6"
+                    />
+                </marker>
+                
+                <marker
+                    id="arrow-475569"
+                    viewBox="0 0 10 10"
+                    refX="8"
+                    refY="5"
+                    markerWidth="8"
+                    markerHeight="8"
+                    orient="auto"
+                    markerUnits="strokeWidth"
+                >
+                    <path
+                        d="M 0 0 L 10 5 L 0 10 Z"
+                        fill="#475569"
+                    />
+                </marker>
+                
+                <marker
+                    id="arrow-7C3AED"
+                    viewBox="0 0 10 10"
+                    refX="8"
+                    refY="5"
+                    markerWidth="8"
+                    markerHeight="8"
+                    orient="auto"
+                    markerUnits="strokeWidth"
+                >
+                    <path
+                        d="M 0 0 L 10 5 L 0 10 Z"
+                        fill="#7C3AED"
+                    />
+                </marker>
+                
+                <marker
+                    id="arrow-94A3B8"
+                    viewBox="0 0 10 10"
+                    refX="8"
+                    refY="5"
+                    markerWidth="8"
+                    markerHeight="8"
+                    orient="auto"
+                    markerUnits="strokeWidth"
+                >
+                    <path
+                        d="M 0 0 L 10 5 L 0 10 Z"
+                        fill="#94A3B8"
+                    />
+                </marker>
+                
+                <marker
+                    id="arrow-D97706"
+                    viewBox="0 0 10 10"
+                    refX="8"
+                    refY="5"
+                    markerWidth="8"
+                    markerHeight="8"
+                    orient="auto"
+                    markerUnits="strokeWidth"
+                >
+                    <path
+                        d="M 0 0 L 10 5 L 0 10 Z"
+                        fill="#D97706"
+                    />
+                </marker>
+                
+                <marker
+                    id="arrow-DB2777"
+                    viewBox="0 0 10 10"
+                    refX="8"
+                    refY="5"
+                    markerWidth="8"
+                    markerHeight="8"
+                    orient="auto"
+                    markerUnits="strokeWidth"
+                >
+                    <path
+                        d="M 0 0 L 10 5 L 0 10 Z"
+                        fill="#DB2777"
+                    />
+                </marker>
+                
+                <marker
+                    id="arrow-F97316"
+                    viewBox="0 0 10 10"
+                    refX="8"
+                    refY="5"
+                    markerWidth="8"
+                    markerHeight="8"
+                    orient="auto"
+                    markerUnits="strokeWidth"
+                >
+                    <path
+                        d="M 0 0 L 10 5 L 0 10 Z"
+                        fill="#F97316"
+                    />
+                </marker>
+                
+
+        </defs>
+        
+<rect x="0" y="0" width="1700" height="1050" fill="#F8FAFC" />
+<g class="diaforge-edge">
+<path d="M 300 510 L 360 510" fill="none" stroke="#3B82F6" stroke-width="2.500" stroke-linecap="round" stroke-linejoin="round" opacity="1" marker-end="url(#arrow-3B82F6)"/>
+
+        <g class="diaforge-edge-label">
+
+            <rect
+                x="305.500"
+                y="482"
+                width="49"
+                height="24"
+                rx="8"
+                fill="#FFFFFF"
+                fill-opacity="0.94"
+                stroke="#E2E8F0"
+                stroke-width="0.8"
+            />
+
+            <text
+                x="330"
+                y="498"
+                font-family="Inter, Arial, sans-serif"
+                font-size="14"
+                font-weight="600"
+                fill="#1D4ED8"
+                text-anchor="middle"
+            >
+                embed
+            </text>
+
+        </g>
+        
+</g>
+<g class="diaforge-edge">
+<path d="M 610 510 Q 716.486 399.831 700 247.500" fill="none" stroke="#2563EB" stroke-width="2.500" stroke-linecap="round" stroke-linejoin="round" opacity="1" marker-end="url(#arrow-2563EB)"/>
+
+        <g class="diaforge-edge-label">
+
+            <rect
+                x="668.743"
+                y="361.291"
+                width="34"
+                height="24"
+                rx="8"
+                fill="#FFFFFF"
+                fill-opacity="0.94"
+                stroke="#E2E8F0"
+                stroke-width="0.8"
+            />
+
+            <text
+                x="685.743"
+                y="377.291"
+                font-family="Inter, Arial, sans-serif"
+                font-size="14"
+                font-weight="600"
+                fill="#1D4ED8"
+                text-anchor="middle"
+            >
+                WQ
+            </text>
+
+        </g>
+        
+</g>
+<g class="diaforge-edge">
+<path d="M 610 510 L 700 432.500" fill="none" stroke="#16A34A" stroke-width="2.500" stroke-linecap="round" stroke-linejoin="round" opacity="1" marker-end="url(#arrow-16A34A)"/>
+
+        <g class="diaforge-edge-label">
+
+            <rect
+                x="638"
+                y="443.250"
+                width="34"
+                height="24"
+                rx="8"
+                fill="#FFFFFF"
+                fill-opacity="0.94"
+                stroke="#E2E8F0"
+                stroke-width="0.8"
+            />
+
+            <text
+                x="655"
+                y="459.250"
+                font-family="Inter, Arial, sans-serif"
+                font-size="14"
+                font-weight="600"
+                fill="#15803D"
+                text-anchor="middle"
+            >
+                WK
+            </text>
+
+        </g>
+        
+</g>
+<g class="diaforge-edge">
+<path d="M 610 510 Q 605.161 605.476 700 617.500" fill="none" stroke="#F97316" stroke-width="2.500" stroke-linecap="round" stroke-linejoin="round" opacity="1" marker-end="url(#arrow-F97316)"/>
+
+        <g class="diaforge-edge-label">
+
+            <rect
+                x="613.080"
+                y="556.613"
+                width="34"
+                height="24"
+                rx="8"
+                fill="#FFFFFF"
+                fill-opacity="0.94"
+                stroke="#E2E8F0"
+                stroke-width="0.8"
+            />
+
+            <text
+                x="630.080"
+                y="572.613"
+                font-family="Inter, Arial, sans-serif"
+                font-size="14"
+                font-weight="600"
+                fill="#C2410C"
+                text-anchor="middle"
+            >
+                WV
+            </text>
+
+        </g>
+        
+</g>
+<g class="diaforge-edge">
+<path d="M 930 247.500 L 1010 312.500" fill="none" stroke="#DB2777" stroke-width="2.500" stroke-linecap="round" stroke-linejoin="round" opacity="1" marker-end="url(#arrow-DB2777)"/>
+
+        <g class="diaforge-edge-label">
+
+            <rect
+                x="953"
+                y="252"
+                width="34"
+                height="24"
+                rx="8"
+                fill="#FFFFFF"
+                fill-opacity="0.94"
+                stroke="#E2E8F0"
+                stroke-width="0.8"
+            />
+
+            <text
+                x="970"
+                y="268"
+                font-family="Inter, Arial, sans-serif"
+                font-size="14"
+                font-weight="600"
+                fill="#BE185D"
+                text-anchor="middle"
+            >
+                Q
+            </text>
+
+        </g>
+        
+</g>
+<g class="diaforge-edge">
+<path d="M 930 432.500 Q 1007.442 397.462 1010 312.500" fill="none" stroke="#16A34A" stroke-width="2.500" stroke-linecap="round" stroke-linejoin="round" opacity="1" marker-end="url(#arrow-16A34A)"/>
+
+        <g class="diaforge-edge-label">
+
+            <rect
+                x="967.721"
+                y="356.981"
+                width="42"
+                height="24"
+                rx="8"
+                fill="#FFFFFF"
+                fill-opacity="0.94"
+                stroke="#E2E8F0"
+                stroke-width="0.8"
+            />
+
+            <text
+                x="988.721"
+                y="372.981"
+                font-family="Inter, Arial, sans-serif"
+                font-size="14"
+                font-weight="600"
+                fill="#15803D"
+                text-anchor="middle"
+            >
+                Káµ
+            </text>
+
+        </g>
+        
+</g>
+<g class="diaforge-edge">
+<path d="M 1260 312.500 L 1010 497.500" fill="none" stroke="#D97706" stroke-width="2.500" stroke-linecap="round" stroke-linejoin="round" opacity="1" marker-end="url(#arrow-D97706)"/>
+
+        <g class="diaforge-edge-label">
+
+            <rect
+                x="1110.500"
+                y="377"
+                width="49"
+                height="24"
+                rx="8"
+                fill="#FFFFFF"
+                fill-opacity="0.94"
+                stroke="#E2E8F0"
+                stroke-width="0.8"
+            />
+
+            <text
+                x="1135"
+                y="393"
+                font-family="Inter, Arial, sans-serif"
+                font-size="14"
+                font-weight="600"
+                fill="#A16207"
+                text-anchor="middle"
+            >
+                scale
+            </text>
+
+        </g>
+        
+</g>
+<g class="diaforge-edge">
+<path d="M 1260 497.500 L 1010 682.500" fill="none" stroke="#0284C7" stroke-width="2.500" stroke-linecap="round" stroke-linejoin="round" opacity="1" marker-end="url(#arrow-0284C7)"/>
+
+        <g class="diaforge-edge-label">
+
+            <rect
+                x="1096.500"
+                y="562"
+                width="77"
+                height="24"
+                rx="8"
+                fill="#FFFFFF"
+                fill-opacity="0.94"
+                stroke="#E2E8F0"
+                stroke-width="0.8"
+            />
+
+            <text
+                x="1135"
+                y="578"
+                font-family="Inter, Arial, sans-serif"
+                font-size="14"
+                font-weight="600"
+                fill="#0369A1"
+                text-anchor="middle"
+            >
+                normalize
+            </text>
+
+        </g>
+        
+</g>
+<g class="diaforge-edge">
+<path d="M 1260 682.500 L 1320 682.500" fill="none" stroke="#0D9488" stroke-width="2.500" stroke-linecap="round" stroke-linejoin="round" opacity="1" marker-end="url(#arrow-0D9488)"/>
+
+        <g class="diaforge-edge-label">
+
+            <rect
+                x="1258.500"
+                y="654.500"
+                width="63"
+                height="24"
+                rx="8"
+                fill="#FFFFFF"
+                fill-opacity="0.94"
+                stroke="#E2E8F0"
+                stroke-width="0.8"
+            />
+
+            <text
+                x="1290"
+                y="670.500"
+                font-family="Inter, Arial, sans-serif"
+                font-size="14"
+                font-weight="600"
+                fill="#0F766E"
+                text-anchor="middle"
+            >
+                weights
+            </text>
+
+        </g>
+        
+</g>
+<g class="diaforge-edge">
+<path d="M 930 617.500 Q 1113.492 719.048 1320 682.500" fill="none" stroke="#F97316" stroke-width="2.500" stroke-linecap="round" stroke-linejoin="round" opacity="1" marker-end="url(#arrow-F97316)"/>
+
+        <g class="diaforge-edge-label">
+
+            <rect
+                x="1102.246"
+                y="656.524"
+                width="34"
+                height="24"
+                rx="8"
+                fill="#FFFFFF"
+                fill-opacity="0.94"
+                stroke="#E2E8F0"
+                stroke-width="0.8"
+            />
+
+            <text
+                x="1119.246"
+                y="672.524"
+                font-family="Inter, Arial, sans-serif"
+                font-size="14"
+                font-weight="600"
+                fill="#C2410C"
+                text-anchor="middle"
+            >
+                V
+            </text>
+
+        </g>
+        
+</g>
+<g class="diaforge-edge">
+<path d="M 1570 682.500 L 1320 475" fill="none" stroke="#7C3AED" stroke-width="2.500" stroke-linecap="round" stroke-linejoin="round" opacity="1" marker-end="url(#arrow-7C3AED)"/>
+
+        <g class="diaforge-edge-label">
+
+            <rect
+                x="1413.500"
+                y="550.750"
+                width="63"
+                height="24"
+                rx="8"
+                fill="#FFFFFF"
+                fill-opacity="0.94"
+                stroke="#E2E8F0"
+                stroke-width="0.8"
+            />
+
+            <text
+                x="1445"
+                y="566.750"
+                font-family="Inter, Arial, sans-serif"
+                font-size="14"
+                font-weight="600"
+                fill="#6D28D9"
+                text-anchor="middle"
+            >
+                context
+            </text>
+
+        </g>
+        
+</g>
+<g class="diaforge-edge">
+<path d="M 1570 475 L 1463 475 Q 1445 475 1445 457 L 1445 268 Q 1445 250 1427 250 L 1320 250" fill="none" stroke="#475569" stroke-width="2.500" stroke-linecap="round" stroke-linejoin="round" opacity="1" marker-end="url(#arrow-475569)"/>
+
+        <g class="diaforge-edge-label">
+
+            <rect
+                x="1417"
+                y="334.500"
+                width="56"
+                height="24"
+                rx="8"
+                fill="#FFFFFF"
+                fill-opacity="0.94"
+                stroke="#E2E8F0"
+                stroke-width="0.8"
+            />
+
+            <text
+                x="1445"
+                y="350.500"
+                font-family="Inter, Arial, sans-serif"
+                font-size="14"
+                font-weight="600"
+                fill="#334155"
+                text-anchor="middle"
+            >
+                concat
+            </text>
+
+        </g>
+        
+</g>
+<g class="diaforge-edge">
+<path d="M 1570 250 L 1465 250 Q 1445 250 1445 270 L 1445 895 Q 1445 915 1425 915 L 1320 915" fill="none" stroke="#10B981" stroke-width="2.500" stroke-linecap="round" stroke-linejoin="round" opacity="1" marker-end="url(#arrow-10B981)"/>
+
+        <g class="diaforge-edge-label">
+
+            <rect
+                x="1417"
+                y="554.500"
+                width="56"
+                height="24"
+                rx="8"
+                fill="#FFFFFF"
+                fill-opacity="0.94"
+                stroke="#E2E8F0"
+                stroke-width="0.8"
+            />
+
+            <text
+                x="1445"
+                y="570.500"
+                font-family="Inter, Arial, sans-serif"
+                font-size="14"
+                font-weight="600"
+                fill="#047857"
+                text-anchor="middle"
+            >
+                output
+            </text>
+
+        </g>
+        
+</g>
+<g class="diaforge-edge">
+<path d="M 610 510 Q 910.497 808.048 1320 915" fill="none" stroke="#94A3B8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" opacity="1" stroke-dasharray="7 5" marker-end="url(#arrow-94A3B8)"/>
+
+        <g class="diaforge-edge-label">
+
+            <rect
+                x="902.749"
+                y="732.274"
+                width="70"
+                height="24"
+                rx="8"
+                fill="#FFFFFF"
+                fill-opacity="0.94"
+                stroke="#E2E8F0"
+                stroke-width="0.8"
+            />
+
+            <text
+                x="937.749"
+                y="748.274"
+                font-family="Inter, Arial, sans-serif"
+                font-size="14"
+                font-weight="600"
+                fill="#64748B"
+                text-anchor="middle"
+            >
+                residual
+            </text>
+
+        </g>
+        
+</g>
+<g id="node-input" opacity="1" transform="rotate(0 185 510)">
+
+            <rect
+                x="70"
+                y="430"
+                width="230"
+                height="160"
+                rx="24"
+                ry="24"
+                fill="#EFF6FF"
+                stroke="#3B82F6"
+                stroke-width="2"
+                filter="url(#node-shadow)"
+            />
+            
+<g transform="translate(96.0,456.0) scale(1.08333)" fill="none" stroke="#2563EB" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2h8l4 4v16H6z"/><path d="M14 2v5h5"/><path d="M9 12h6M9 16h6"/></g>
+<text x="134" y="476" font-family="Inter, Arial, sans-serif" font-size="20" font-weight="700" fill="#1E3A8A" text-anchor="start" dominant-baseline="alphabetic">Input Tokens</text>
+<text x="96" y="505" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="400" fill="#1E3A8A" text-anchor="start" dominant-baseline="alphabetic">The</text>
+<text x="96" y="526" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="400" fill="#1E3A8A" text-anchor="start" dominant-baseline="alphabetic">model</text>
+<text x="96" y="547" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="400" fill="#1E3A8A" text-anchor="start" dominant-baseline="alphabetic">reads</text>
+<text x="96" y="568" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="400" fill="#1E3A8A" text-anchor="start" dominant-baseline="alphabetic">tokens</text>
+
+</g>
+<g id="node-embedding" opacity="1" transform="rotate(0 485 510)">
+
+            <rect
+                x="360"
+                y="430"
+                width="250"
+                height="160"
+                rx="24"
+                ry="24"
+                fill="#F3E8FF"
+                stroke="#8B5CF6"
+                stroke-width="2"
+                filter="url(#node-shadow)"
+            />
+            
+<g transform="translate(386.0,456.0) scale(1.08333)" fill="none" stroke="#7C3AED" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5c0-2 16-2 16 0v14c0 2-16 2-16 0z"/><path d="M4 5c0 2 16 2 16 0"/><path d="M4 12c0 2 16 2 16 0"/></g>
+<text x="424" y="476" font-family="Inter, Arial, sans-serif" font-size="20" font-weight="700" fill="#4C1D95" text-anchor="start" dominant-baseline="alphabetic">Token Embeddings</text>
+<text x="386" y="505" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="400" fill="#4C1D95" text-anchor="start" dominant-baseline="alphabetic">Token vectors</text>
+<text x="386" y="526" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="400" fill="#4C1D95" text-anchor="start" dominant-baseline="alphabetic">Positional information</text>
+<text x="386" y="547" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="400" fill="#4C1D95" text-anchor="start" dominant-baseline="alphabetic">d_model dimensions</text>
+
+</g>
+<g id="node-q" opacity="1" transform="rotate(0 815 247.500)">
+
+            <rect
+                x="700"
+                y="180"
+                width="230"
+                height="135"
+                rx="22"
+                ry="22"
+                fill="#DBEAFE"
+                stroke="#2563EB"
+                stroke-width="2"
+                filter="url(#node-shadow)"
+            />
+            
+<g transform="translate(722.0,202.0) scale(1.08333)" fill="none" stroke="#2563EB" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="M16.5 16.5L22 22"/></g>
+<text x="760" y="221" font-family="Inter, Arial, sans-serif" font-size="19" font-weight="700" fill="#1E3A8A" text-anchor="start" dominant-baseline="alphabetic">Query Q</text>
+<text x="722" y="250" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="400" fill="#1E3A8A" text-anchor="start" dominant-baseline="alphabetic">What am I</text>
+<text x="722" y="271" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="400" fill="#1E3A8A" text-anchor="start" dominant-baseline="alphabetic">looking for?</text>
+
+</g>
+<g id="node-k" opacity="1" transform="rotate(0 815 432.500)">
+
+            <rect
+                x="700"
+                y="365"
+                width="230"
+                height="135"
+                rx="22"
+                ry="22"
+                fill="#DCFCE7"
+                stroke="#16A34A"
+                stroke-width="2"
+                filter="url(#node-shadow)"
+            />
+            
+<g transform="translate(722.0,387.0) scale(1.08333)" fill="none" stroke="#16A34A" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.1.1l2-2a5 5 0 0 0-7.1-7.1l-1.1 1.1"/><path d="M14 11a5 5 0 0 0-7.1-.1l-2 2A5 5 0 0 0 12 20l1.1-1.1"/></g>
+<text x="760" y="406" font-family="Inter, Arial, sans-serif" font-size="19" font-weight="700" fill="#14532D" text-anchor="start" dominant-baseline="alphabetic">Key K</text>
+<text x="722" y="435" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="400" fill="#14532D" text-anchor="start" dominant-baseline="alphabetic">What do I</text>
+<text x="722" y="456" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="400" fill="#14532D" text-anchor="start" dominant-baseline="alphabetic">represent?</text>
+
+</g>
+<g id="node-v" opacity="1" transform="rotate(0 815 617.500)">
+
+            <rect
+                x="700"
+                y="550"
+                width="230"
+                height="135"
+                rx="22"
+                ry="22"
+                fill="#FFEDD5"
+                stroke="#F97316"
+                stroke-width="2"
+                filter="url(#node-shadow)"
+            />
+            
+<g transform="translate(722.0,572.0) scale(1.08333)" fill="none" stroke="#EA580C" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5c0-2 16-2 16 0v14c0 2-16 2-16 0z"/><path d="M4 5c0 2 16 2 16 0"/><path d="M4 12c0 2 16 2 16 0"/></g>
+<text x="760" y="591" font-family="Inter, Arial, sans-serif" font-size="19" font-weight="700" fill="#7C2D12" text-anchor="start" dominant-baseline="alphabetic">Value V</text>
+<text x="722" y="620" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="400" fill="#7C2D12" text-anchor="start" dominant-baseline="alphabetic">Information</text>
+<text x="722" y="641" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="400" fill="#7C2D12" text-anchor="start" dominant-baseline="alphabetic">to retrieve</text>
+
+</g>
+<g id="node-score" opacity="1" transform="rotate(0 1135 312.500)">
+
+            <rect
+                x="1010"
+                y="245"
+                width="250"
+                height="135"
+                rx="22"
+                ry="22"
+                fill="#FCE7F3"
+                stroke="#DB2777"
+                stroke-width="2"
+                filter="url(#node-shadow)"
+            />
+            
+<g transform="translate(1032.0,267.0) scale(1.08333)" fill="none" stroke="#DB2777" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20V4"/><path d="M4 20h17"/><path d="M7 16l4-5 3 2 5-7"/></g>
+<text x="1070" y="288" font-family="Inter, Arial, sans-serif" font-size="21" font-weight="700" fill="#831843" text-anchor="start" dominant-baseline="alphabetic">QK^T</text>
+<text x="1032" y="317" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="400" fill="#831843" text-anchor="start" dominant-baseline="alphabetic">Query Ã Key^T</text>
+<text x="1032" y="338" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="400" fill="#831843" text-anchor="start" dominant-baseline="alphabetic">Similarity scores</text>
+
+</g>
+<g id="node-scale" opacity="1" transform="rotate(0 1135 497.500)">
+
+            <rect
+                x="1010"
+                y="430"
+                width="250"
+                height="135"
+                rx="22"
+                ry="22"
+                fill="#FEF3C7"
+                stroke="#D97706"
+                stroke-width="2"
+                filter="url(#node-shadow)"
+            />
+            
+<g transform="translate(1032.0,452.0) scale(1.08333)" fill="none" stroke="#D97706" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.7 1.7 0 0 0 .3 1.9l.1.1-1.8 1.8 -.1-.1a1.7 1.7 0 0 0-1.9-.3 1.7 1.7 0 0 0-1 1.6V20 h-2.6v-.1a1.7 1.7 0 0 0-1-1.6 1.7 1.7 0 0 0-1.9.3l-.1.1-1.8-1.8 .1-.1A1.7 1.7 0 0 0 8 15 a1.7 1.7 0 0 0-1.6-1H6v-2.6h.1 a1.7 1.7 0 0 0 1.6-1 1.7 1.7 0 0 0-.3-1.9l-.1-.1 1.8-1.8.1.1a1.7 1.7 0 0 0 1.9.3 1.7 1.7 0 0 0 1-1.6V5h2.6v.1 a1.7 1.7 0 0 0 1 1.6 1.7 1.7 0 0 0 1.9-.3l.1-.1 1.8 1.8-.1.1a1.7 1.7 0 0 0-.3 1.9 1.7 1.7 0 0 0 1.6 1h.1V14h-.1 a1.7 1.7 0 0 0-1.6 1z"/></g>
+<text x="1070" y="471" font-family="Inter, Arial, sans-serif" font-size="19" font-weight="700" fill="#78350F" text-anchor="start" dominant-baseline="alphabetic">Scale</text>
+<text x="1032" y="500" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="400" fill="#78350F" text-anchor="start" dominant-baseline="alphabetic">Divide by rootdsubk</text>
+<text x="1032" y="521" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="400" fill="#78350F" text-anchor="start" dominant-baseline="alphabetic">Stable gradients</text>
+
+</g>
+<g id="node-softmax" opacity="1" transform="rotate(0 1135 682.500)">
+
+            <rect
+                x="1010"
+                y="615"
+                width="250"
+                height="135"
+                rx="22"
+                ry="22"
+                fill="#E0F2FE"
+                stroke="#0284C7"
+                stroke-width="2"
+                filter="url(#node-shadow)"
+            />
+            
+<g transform="translate(1032.0,637.0) scale(1.08333)" fill="none" stroke="#0284C7" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20V4"/><path d="M4 20h17"/><path d="M7 16l4-5 3 2 5-7"/></g>
+<text x="1070" y="656" font-family="Inter, Arial, sans-serif" font-size="19" font-weight="700" fill="#0C4A6E" text-anchor="start" dominant-baseline="alphabetic">Softmax</text>
+<text x="1032" y="685" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="400" fill="#0C4A6E" text-anchor="start" dominant-baseline="alphabetic">Attention weights</text>
+<text x="1032" y="706" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="400" fill="#0C4A6E" text-anchor="start" dominant-baseline="alphabetic">Probability distribution</text>
+
+</g>
+<g id="node-weighted" opacity="1" transform="rotate(0 1445 682.500)">
+
+            <rect
+                x="1320"
+                y="615"
+                width="250"
+                height="135"
+                rx="22"
+                ry="22"
+                fill="#F0FDFA"
+                stroke="#0D9488"
+                stroke-width="2"
+                filter="url(#node-shadow)"
+            />
+            
+<g transform="translate(1342.0,637.0) scale(1.08333)" fill="none" stroke="#0F766E" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5c0-2 16-2 16 0v14c0 2-16 2-16 0z"/><path d="M4 5c0 2 16 2 16 0"/><path d="M4 12c0 2 16 2 16 0"/></g>
+<text x="1380" y="656" font-family="Inter, Arial, sans-serif" font-size="19" font-weight="700" fill="#134E4A" text-anchor="start" dominant-baseline="alphabetic">Weighted Values</text>
+<text x="1342" y="685" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="400" fill="#134E4A" text-anchor="start" dominant-baseline="alphabetic">Attention x V</text>
+<text x="1342" y="706" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="400" fill="#134E4A" text-anchor="start" dominant-baseline="alphabetic">Context vector</text>
+
+</g>
+<g id="node-attention" opacity="1" transform="rotate(0 1445 475)">
+
+            <rect
+                x="1320"
+                y="400"
+                width="250"
+                height="150"
+                rx="28"
+                ry="28"
+                fill="#EDE9FE"
+                stroke="#7C3AED"
+                stroke-width="2.500"
+                filter="url(#node-shadow)"
+            />
+            
+<g transform="translate(1348.0,428.0) scale(1.08333)" fill="none" stroke="#7C3AED" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="6" width="12" height="12" rx="2"/><path d="M9 1v5M15 1v5M9 18v5M15 18v5M1 9h5M18 9h5M1 15h5M18 15h5"/></g>
+<text x="1386" y="447" font-family="Inter, Arial, sans-serif" font-size="19" font-weight="700" fill="#4C1D95" text-anchor="start" dominant-baseline="alphabetic">Multi-Head Attention</text>
+<text x="1348" y="476" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="400" fill="#4C1D95" text-anchor="start" dominant-baseline="alphabetic">Head 1</text>
+<text x="1348" y="497" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="400" fill="#4C1D95" text-anchor="start" dominant-baseline="alphabetic">Head 2</text>
+<text x="1348" y="518" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="400" fill="#4C1D95" text-anchor="start" dominant-baseline="alphabetic">... Head h</text>
+
+</g>
+<g id="node-output_projection" opacity="1" transform="rotate(0 1445 250)">
+
+            <rect
+                x="1320"
+                y="180"
+                width="250"
+                height="140"
+                rx="24"
+                ry="24"
+                fill="#F1F5F9"
+                stroke="#475569"
+                stroke-width="2"
+                filter="url(#node-shadow)"
+            />
+            
+<g transform="translate(1344.0,204.0) scale(1.08333)" fill="none" stroke="#475569" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.7 1.7 0 0 0 .3 1.9l.1.1-1.8 1.8 -.1-.1a1.7 1.7 0 0 0-1.9-.3 1.7 1.7 0 0 0-1 1.6V20 h-2.6v-.1a1.7 1.7 0 0 0-1-1.6 1.7 1.7 0 0 0-1.9.3l-.1.1-1.8-1.8 .1-.1A1.7 1.7 0 0 0 8 15 a1.7 1.7 0 0 0-1.6-1H6v-2.6h.1 a1.7 1.7 0 0 0 1.6-1 1.7 1.7 0 0 0-.3-1.9l-.1-.1 1.8-1.8.1.1a1.7 1.7 0 0 0 1.9.3 1.7 1.7 0 0 0 1-1.6V5h2.6v.1 a1.7 1.7 0 0 0 1 1.6 1.7 1.7 0 0 0 1.9-.3l.1-.1 1.8 1.8-.1.1a1.7 1.7 0 0 0-.3 1.9 1.7 1.7 0 0 0 1.6 1h.1V14h-.1 a1.7 1.7 0 0 0-1.6 1z"/></g>
+<text x="1382" y="223" font-family="Inter, Arial, sans-serif" font-size="19" font-weight="700" fill="#1E293B" text-anchor="start" dominant-baseline="alphabetic">Output Projection</text>
+<text x="1344" y="252" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="400" fill="#1E293B" text-anchor="start" dominant-baseline="alphabetic">Concatenate heads</text>
+<text x="1344" y="273" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="400" fill="#1E293B" text-anchor="start" dominant-baseline="alphabetic">Linear transformation</text>
+
+</g>
+<g id="node-residual" opacity="1" transform="rotate(0 1445 915)">
+
+            <rect
+                x="1320"
+                y="845"
+                width="250"
+                height="140"
+                rx="25"
+                ry="25"
+                fill="#ECFDF5"
+                stroke="#10B981"
+                stroke-width="2"
+                filter="url(#node-shadow)"
+            />
+            
+<g transform="translate(1345.0,870.0) scale(1.08333)" fill="none" stroke="#059669" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M7 12l3 3 7-7"/></g>
+<text x="1383" y="888" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="700" fill="#064E3B" text-anchor="start" dominant-baseline="alphabetic">Residual + LayerNorm</text>
+<text x="1345" y="917" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="400" fill="#064E3B" text-anchor="start" dominant-baseline="alphabetic">Add input</text>
+<text x="1345" y="938" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="400" fill="#064E3B" text-anchor="start" dominant-baseline="alphabetic">Normalize output</text>
+
+</g>
+</svg>

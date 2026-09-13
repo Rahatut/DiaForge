@@ -1,8 +1,8 @@
 # DiaForge
 
-Declarative SVG diagram generation engine with a custom `.dia` language.
+Declarative diagram generation engine with a custom `.dia` language.
 
-![DiaForge Visual Test](visual_test.svg)
+![DiaForge Visual Test](examples/visual_test.svg)
 
 ## Features
 
@@ -35,12 +35,14 @@ pip install -e .
 
 ```bash
 diaforge examples/visual_test.dia -o visual_test.svg
+diaforge examples/visual_test.dia -o visual_test.png
 ```
 
 Or:
 
 ```bash
 python -m diaforge.cli examples/visual_test.dia -o visual_test.svg
+python -m diaforge.cli examples/visual_test.dia -o visual_test.png
 ```
 
 Open:

@@ -3,6 +3,8 @@ from __future__ import annotations
 import html
 import math
 
+import cairosvg
+
 from .ast import Diagram, Edge, Node, Point
 from .icons import icon_svg
 from .routing import route
@@ -1296,3 +1298,17 @@ def render(
     return SVGRenderer(
         diagram
     ).render()
+
+
+def render_png(
+    diagram: Diagram,
+    *,
+    dpi: float = 96.0,
+) -> bytes:
+
+    svg = render(diagram)
+
+    return cairosvg.svg2png(
+        bytestring=svg.encode("utf-8"),
+        dpi=dpi,
+    )

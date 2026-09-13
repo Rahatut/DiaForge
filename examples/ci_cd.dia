@@ -1,0 +1,280 @@
+diagram "CI/CD Pipeline" {
+
+  canvas {
+    width: 1500
+    height: 900
+    background: "#F8FAFC"
+    padding: 50
+    font_family: "Inter, Arial, sans-serif"
+    font_size: 14
+  }
+
+  node developer {
+    title: "Developer"
+    icon: "user"
+
+    fill: "#EFF6FF"
+    stroke: "#3B82F6"
+    text: "#1E3A8A"
+
+    stroke_width: 2
+    radius: 24
+    padding: 26
+
+    x: 70
+    y: 340
+    w: 220
+    h: 150
+
+    icon_color: "#2563EB"
+    shadow: true
+    shadow_blur: 16
+    shadow_offset_y: 5
+
+    title_size: 19
+    title_weight: "700"
+
+    lines: "Write code|Commit changes|Open pull request"
+  }
+
+  node git {
+    title: "Git Repository"
+    icon: "link"
+
+    fill: "#F3E8FF"
+    stroke: "#8B5CF6"
+    text: "#4C1D95"
+
+    stroke_width: 2
+    radius: 24
+    padding: 26
+
+    x: 370
+    y: 340
+    w: 230
+    h: 150
+
+    icon_color: "#7C3AED"
+    shadow: true
+    shadow_blur: 16
+    shadow_offset_y: 5
+
+    title_size: 19
+    title_weight: "700"
+
+    lines: "Source control|Branches|Pull requests"
+  }
+
+  node build {
+    title: "CI: Build & Test"
+    icon: "settings"
+
+    fill: "#ECFDF5"
+    stroke: "#10B981"
+    text: "#064E3B"
+
+    stroke_width: 2
+    radius: 24
+    padding: 26
+
+    x: 680
+    y: 180
+    w: 250
+    h: 150
+
+    icon_color: "#059669"
+    shadow: true
+    shadow_blur: 16
+    shadow_offset_y: 5
+
+    title_size: 19
+    title_weight: "700"
+
+    lines: "Install dependencies|Run tests|Lint & security checks"
+  }
+
+  node artifact {
+    title: "Build Artifact"
+    icon: "package"
+
+    fill: "#FFF7ED"
+    stroke: "#F97316"
+    text: "#7C2D12"
+
+    stroke_width: 2
+    radius: 24
+    padding: 26
+
+    x: 990
+    y: 180
+    w: 230
+    h: 150
+
+    icon_color: "#EA580C"
+    shadow: true
+    shadow_blur: 16
+    shadow_offset_y: 5
+
+    title_size: 19
+    title_weight: "700"
+
+    lines: "Container image|Versioned artifact|Ready to deploy"
+  }
+
+  node staging {
+    title: "Staging"
+    icon: "server"
+
+    fill: "#FEFCE8"
+    stroke: "#EAB308"
+    text: "#713F12"
+
+    stroke_width: 2
+    radius: 24
+    padding: 26
+
+    x: 990
+    y: 410
+    w: 230
+    h: 150
+
+    icon_color: "#CA8A04"
+    shadow: true
+    shadow_blur: 16
+    shadow_offset_y: 5
+
+    title_size: 19
+    title_weight: "700"
+
+    lines: "Automatic deployment|Integration tests|Smoke tests"
+  }
+
+  node production {
+    title: "Production"
+    icon: "cloud"
+
+    fill: "#EFF6FF"
+    stroke: "#0EA5E9"
+    text: "#0C4A6E"
+
+    stroke_width: 2
+    radius: 26
+    padding: 28
+
+    x: 990
+    y: 650
+    w: 230
+    h: 150
+
+    icon_color: "#0284C7"
+    shadow: true
+    shadow_blur: 18
+    shadow_offset_y: 6
+
+    title_size: 20
+    title_weight: "700"
+
+    lines: "Release application|Monitor system|Serve users"
+  }
+
+  node feedback {
+    title: "Feedback"
+    icon: "chart"
+
+    fill: "#FEF2F2"
+    stroke: "#EF4444"
+    text: "#7F1D1D"
+
+    stroke_width: 2
+    radius: 24
+    padding: 24
+
+    x: 650
+    y: 650
+    w: 230
+    h: 150
+
+    icon_color: "#DC2626"
+    shadow: true
+    shadow_blur: 16
+    shadow_offset_y: 5
+
+    title_size: 19
+    title_weight: "700"
+
+    lines: "Logs & metrics|Failure detection|Developer notification"
+  }
+
+  edge developer -> git {
+    route: straight
+    stroke: "#3B82F6"
+    width: 2.5
+    label: "push"
+    label_color: "#1D4ED8"
+  }
+
+  edge git -> build {
+    route: curve
+    curve: 65
+    stroke: "#8B5CF6"
+    width: 2.5
+    label: "trigger CI"
+    label_color: "#6D28D9"
+  }
+
+  edge build -> artifact {
+    route: straight
+    stroke: "#10B981"
+    width: 2.5
+    label: "build"
+    label_color: "#047857"
+  }
+
+  edge artifact -> staging {
+    route: orthogonal
+    corner_radius: 18
+    stroke: "#EAB308"
+    width: 2.5
+    label: "deploy"
+    label_color: "#A16207"
+  }
+
+  edge staging -> production {
+    route: orthogonal
+    corner_radius: 20
+    stroke: "#0EA5E9"
+    width: 2.5
+    label: "promote"
+    label_color: "#0369A1"
+  }
+
+  edge production -> feedback {
+    route: curve
+    curve: 70
+    stroke: "#EF4444"
+    width: 2
+    dash: "7 5"
+    label: "monitor"
+    label_color: "#B91C1C"
+  }
+
+  edge feedback -> developer {
+    route: curve
+    curve: 110
+    stroke: "#64748B"
+    width: 2
+    dash: "6 5"
+    label: "iterate"
+    label_color: "#475569"
+  }
+
+  edge staging -> feedback {
+    route: curve
+    curve: 55
+    stroke: "#F97316"
+    width: 2
+    dash: "5 5"
+    label: "test results"
+    label_color: "#C2410C"
+  }
+}

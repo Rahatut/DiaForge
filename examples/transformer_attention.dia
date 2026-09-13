@@ -1,0 +1,479 @@
+diagram "Transformer Self-Attention" {
+
+  canvas {
+    width: 1700
+    height: 1050
+    background: "#F8FAFC"
+    padding: 50
+    font_family: "Inter, Arial, sans-serif"
+    font_size: 14
+  }
+
+  node input {
+    title: "Input Tokens"
+    icon: "document"
+
+    fill: "#EFF6FF"
+    stroke: "#3B82F6"
+    text: "#1E3A8A"
+
+    stroke_width: 2
+    radius: 24
+    padding: 26
+
+    x: 70
+    y: 430
+    w: 230
+    h: 160
+
+    icon_color: "#2563EB"
+    shadow: true
+    shadow_blur: 18
+    shadow_offset_y: 6
+
+    title_size: 20
+    title_weight: "700"
+    body_size: 14
+
+    lines: "The|model|reads|tokens"
+  }
+
+  node embedding {
+    title: "Token Embeddings"
+    icon: "database"
+
+    fill: "#F3E8FF"
+    stroke: "#8B5CF6"
+    text: "#4C1D95"
+
+    stroke_width: 2
+    radius: 24
+    padding: 26
+
+    x: 360
+    y: 430
+    w: 250
+    h: 160
+
+    icon_color: "#7C3AED"
+    shadow: true
+    shadow_blur: 18
+    shadow_offset_y: 6
+
+    title_size: 20
+    title_weight: "700"
+    body_size: 14
+
+    lines: "Token vectors|Positional information|d_model dimensions"
+  }
+
+  node q {
+    title: "Query Q"
+    icon: "search"
+
+    fill: "#DBEAFE"
+    stroke: "#2563EB"
+    text: "#1E3A8A"
+
+    stroke_width: 2
+    radius: 22
+    padding: 22
+
+    x: 700
+    y: 180
+    w: 230
+    h: 135
+
+    icon_color: "#2563EB"
+    shadow: true
+    shadow_blur: 15
+    shadow_offset_y: 5
+
+    title_size: 19
+    title_weight: "700"
+    body_size: 13
+
+    lines: "What am I|looking for?"
+  }
+
+  node k {
+    title: "Key K"
+    icon: "link"
+
+    fill: "#DCFCE7"
+    stroke: "#16A34A"
+    text: "#14532D"
+
+    stroke_width: 2
+    radius: 22
+    padding: 22
+
+    x: 700
+    y: 365
+    w: 230
+    h: 135
+
+    icon_color: "#16A34A"
+    shadow: true
+    shadow_blur: 15
+    shadow_offset_y: 5
+
+    title_size: 19
+    title_weight: "700"
+    body_size: 13
+
+    lines: "What do I|represent?"
+  }
+
+  node v {
+    title: "Value V"
+    icon: "database"
+
+    fill: "#FFEDD5"
+    stroke: "#F97316"
+    text: "#7C2D12"
+
+    stroke_width: 2
+    radius: 22
+    padding: 22
+
+    x: 700
+    y: 550
+    w: 230
+    h: 135
+
+    icon_color: "#EA580C"
+    shadow: true
+    shadow_blur: 15
+    shadow_offset_y: 5
+
+    title_size: 19
+    title_weight: "700"
+    body_size: 13
+
+    lines: "Information|to retrieve"
+  }
+
+  node score {
+    title: "QK^T"
+    icon: "chart"
+
+    fill: "#FCE7F3"
+    stroke: "#DB2777"
+    text: "#831843"
+
+    stroke_width: 2
+    radius: 22
+    padding: 22
+
+    x: 1010
+    y: 245
+    w: 250
+    h: 135
+
+    icon_color: "#DB2777"
+    shadow: true
+    shadow_blur: 15
+    shadow_offset_y: 5
+
+    title_size: 21
+    title_weight: "700"
+    body_size: 13
+
+    lines: "Query × Key^T|Similarity scores"
+  }
+
+  node scale {
+    title: "Scale"
+    icon: "settings"
+
+    fill: "#FEF3C7"
+    stroke: "#D97706"
+    text: "#78350F"
+
+    stroke_width: 2
+    radius: 22
+    padding: 22
+
+    x: 1010
+    y: 430
+    w: 250
+    h: 135
+
+    icon_color: "#D97706"
+    shadow: true
+    shadow_blur: 15
+    shadow_offset_y: 5
+
+    title_size: 19
+    title_weight: "700"
+    body_size: 13
+
+    lines: "Divide by rootdsubk|Stable gradients"
+  }
+
+  node softmax {
+    title: "Softmax"
+    icon: "chart"
+
+    fill: "#E0F2FE"
+    stroke: "#0284C7"
+    text: "#0C4A6E"
+
+    stroke_width: 2
+    radius: 22
+    padding: 22
+
+    x: 1010
+    y: 615
+    w: 250
+    h: 135
+
+    icon_color: "#0284C7"
+    shadow: true
+    shadow_blur: 15
+    shadow_offset_y: 5
+
+    title_size: 19
+    title_weight: "700"
+    body_size: 13
+
+    lines: "Attention weights|Probability distribution"
+  }
+
+  node weighted {
+    title: "Weighted Values"
+    icon: "database"
+
+    fill: "#F0FDFA"
+    stroke: "#0D9488"
+    text: "#134E4A"
+
+    stroke_width: 2
+    radius: 22
+    padding: 22
+
+    x: 1320
+    y: 615
+    w: 250
+    h: 135
+
+    icon_color: "#0F766E"
+    shadow: true
+    shadow_blur: 15
+    shadow_offset_y: 5
+
+    title_size: 19
+    title_weight: "700"
+    body_size: 13
+
+    lines: "Attention x V|Context vector"
+  }
+
+  node attention {
+    title: "Multi-Head Attention"
+    icon: "cpu"
+
+    fill: "#EDE9FE"
+    stroke: "#7C3AED"
+    text: "#4C1D95"
+
+    stroke_width: 2.5
+    radius: 28
+    padding: 28
+
+    x: 1320
+    y: 400
+    w: 250
+    h: 150
+
+    icon_color: "#7C3AED"
+    shadow: true
+    shadow_blur: 20
+    shadow_offset_y: 7
+
+    title_size: 19
+    title_weight: "700"
+    body_size: 13
+
+    lines: "Head 1|Head 2|... Head h"
+  }
+
+  node output_projection {
+    title: "Output Projection"
+    icon: "settings"
+
+    fill: "#F1F5F9"
+    stroke: "#475569"
+    text: "#1E293B"
+
+    stroke_width: 2
+    radius: 24
+    padding: 24
+
+    x: 1320
+    y: 180
+    w: 250
+    h: 140
+
+    icon_color: "#475569"
+    shadow: true
+    shadow_blur: 16
+    shadow_offset_y: 5
+
+    title_size: 19
+    title_weight: "700"
+    body_size: 13
+
+    lines: "Concatenate heads|Linear transformation"
+  }
+
+  node residual {
+    title: "Residual + LayerNorm"
+    icon: "check"
+
+    fill: "#ECFDF5"
+    stroke: "#10B981"
+    text: "#064E3B"
+
+    stroke_width: 2
+    radius: 25
+    padding: 25
+
+    x: 1320
+    y: 845
+    w: 250
+    h: 140
+
+    icon_color: "#059669"
+    shadow: true
+    shadow_blur: 18
+    shadow_offset_y: 6
+
+    title_size: 18
+    title_weight: "700"
+    body_size: 13
+
+    lines: "Add input|Normalize output"
+  }
+
+  edge input -> embedding {
+    route: straight
+    stroke: "#3B82F6"
+    width: 2.5
+    label: "embed"
+    label_color: "#1D4ED8"
+  }
+
+  edge embedding -> q {
+    route: curve
+    curve: 65
+    stroke: "#2563EB"
+    width: 2.5
+    label: "WQ"
+    label_color: "#1D4ED8"
+  }
+
+  edge embedding -> k {
+    route: straight
+    stroke: "#16A34A"
+    width: 2.5
+    label: "WK"
+    label_color: "#15803D"
+  }
+
+  edge embedding -> v {
+    route: curve
+    curve: 65
+    stroke: "#F97316"
+    width: 2.5
+    label: "WV"
+    label_color: "#C2410C"
+  }
+
+  edge q -> score {
+    route: straight
+    stroke: "#DB2777"
+    width: 2.5
+    label: "Q"
+    label_color: "#BE185D"
+  }
+
+  edge k -> score {
+    route: curve
+    curve: 45
+    stroke: "#16A34A"
+    width: 2.5
+    label: "Kᵀ"
+    label_color: "#15803D"
+  }
+
+  edge score -> scale {
+    route: straight
+    stroke: "#D97706"
+    width: 2.5
+    label: "scale"
+    label_color: "#A16207"
+  }
+
+  edge scale -> softmax {
+    route: straight
+    stroke: "#0284C7"
+    width: 2.5
+    label: "normalize"
+    label_color: "#0369A1"
+  }
+
+  edge softmax -> weighted {
+    route: straight
+    stroke: "#0D9488"
+    width: 2.5
+    label: "weights"
+    label_color: "#0F766E"
+  }
+
+  edge v -> weighted {
+    route: curve
+    curve: 70
+    stroke: "#F97316"
+    width: 2.5
+    label: "V"
+    label_color: "#C2410C"
+  }
+
+  edge weighted -> attention {
+    route: straight
+    stroke: "#7C3AED"
+    width: 2.5
+    label: "context"
+    label_color: "#6D28D9"
+  }
+
+  edge attention -> output_projection {
+    route: orthogonal
+    corner_radius: 18
+    stroke: "#475569"
+    width: 2.5
+    label: "concat"
+    label_color: "#334155"
+  }
+
+  edge output_projection -> residual {
+    route: orthogonal
+    corner_radius: 20
+    stroke: "#10B981"
+    width: 2.5
+    label: "output"
+    label_color: "#047857"
+  }
+
+  edge embedding -> residual {
+    route: curve
+    curve: 110
+    stroke: "#94A3B8"
+    width: 2
+    dash: "7 5"
+    label: "residual"
+    label_color: "#64748B"
+  }
+}

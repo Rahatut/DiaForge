@@ -455,6 +455,9 @@ class Parser:
 
         props = self.block()
 
+        width_explicit = "w" in props
+        height_explicit = "h" in props
+
         node = Node(
             id=node_id,
 
@@ -497,6 +500,9 @@ class Parser:
                 "h",
                 120,
             ),
+            width_explicit=width_explicit,
+
+            height_explicit=height_explicit,
 
             fill=self.string(
                 props,
@@ -642,7 +648,10 @@ class Parser:
         # ----------------------------------------------------
 
         if "table" in props:
-            node.data["table"] = props["table"]
+            if isinstance(props["table"], Table):
+                node.table = props["table"]
+            else:
+                node.data["table"] = props["table"]
 
         return node
 

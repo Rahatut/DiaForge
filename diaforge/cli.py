@@ -6,7 +6,7 @@ from .parser import parse
 
 from .layout import auto_layout
 
-from .render_svg import render
+from .render_svg import render, render_png
 
 
 def main():
@@ -24,7 +24,15 @@ def main():
         "-o",
         "--output",
         default="diagram.svg",
-        help="Output SVG file",
+        help="Output file (SVG or PNG)",
+    )
+
+    parser.add_argument(
+        "-f",
+        "--format",
+        choices=["svg", "png"],
+        default=None,
+        help="Output format (auto-detected from extension)",
     )
 
     args = parser.parse_args()
@@ -44,22 +52,31 @@ def main():
     )
 
 
-    svg = render(
-        diagram
-    )
+    output_path = Path(args.output)
+    if args.format == "png" or (
+        args.format is None
+        and output_path.suffix.lower() == ".png"
+    ):
 
+        png = render_png(diagram)
 
-    Path(
-        args.output
-    ).write_text(
-        svg,
-        encoding="utf-8"
-    )
+        output_path.write_bytes(png)
 
+        print(
+            f"Wrote {args.output}"
+        )
+    else:
 
-    print(
-        f"Wrote {args.output}"
-    )
+        svg = render(diagram)
+
+        output_path.write_text(
+            svg,
+            encoding="utf-8",
+        )
+
+        print(
+            f"Wrote {args.output}"
+        )
 
 
 if __name__ == "__main__":
