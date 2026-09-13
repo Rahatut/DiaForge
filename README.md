@@ -2,7 +2,7 @@
 
 Declarative SVG diagram generation engine with a custom `.dia` language.
 
-![DiaForge Visual Test](examples/visual_test.svg)
+![DiaForge Visual Test](visual_test.svg)
 
 ## Features
 
