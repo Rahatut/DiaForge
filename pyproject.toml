@@ -1,0 +1,12 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "diaforge"
+version = "0.1.0"
+description = "Declarative vector diagram engine"
+requires-python = ">=3.10"
+
+[project.scripts]
+diaforge = "diaforge.cli:main"

@@ -1,0 +1,251 @@
+diagram "DiaForge Visual Test" {
+
+  canvas {
+    width: 1500
+    height: 900
+    background: "#F6F8FC"
+    padding: 50
+    font_family: "Inter, Arial, sans-serif"
+    font_size: 14
+  }
+
+  node input {
+    title: "Input Data"
+    icon: "database"
+
+    fill: "#E8F1FF"
+    stroke: "#4F7DF3"
+    text: "#172554"
+
+    stroke_width: 2
+    radius: 24
+    padding: 26
+
+    x: 80
+    y: 330
+    w: 250
+    h: 150
+
+    title_size: 20
+    title_weight: "700"
+    body_size: 14
+
+    icon_color: "#2563EB"
+    shadow: true
+    shadow_blur: 18
+    shadow_offset_y: 6
+
+    lines: "English claims|Bangla claims|Arabic evidence"
+  }
+
+  node translate {
+    title: "Translation"
+    icon: "document"
+
+    fill: "#ECFDF5"
+    stroke: "#10B981"
+    text: "#064E3B"
+
+    stroke_width: 2
+    radius: 24
+    padding: 26
+
+    x: 440
+    y: 150
+    w: 260
+    h: 150
+
+    title_size: 20
+    title_weight: "700"
+    body_size: 14
+
+    icon_color: "#059669"
+    shadow: true
+    shadow_blur: 18
+    shadow_offset_y: 6
+
+    lines: "Bangla to English|Query normalization|Semantic preservation"
+  }
+
+  node retrieval {
+    title: "Dense Retrieval"
+    icon: "cpu"
+
+    fill: "#F3E8FF"
+    stroke: "#8B5CF6"
+    text: "#3B0764"
+
+    stroke_width: 2
+    radius: 24
+    padding: 26
+
+    x: 780
+    y: 330
+    w: 280
+    h: 150
+
+    title_size: 20
+    title_weight: "700"
+    body_size: 14
+
+    icon_color: "#7C3AED"
+    shadow: true
+    shadow_blur: 18
+    shadow_offset_y: 6
+
+    lines: "BGE-M3 embeddings|Top-k evidence|Multilingual matching"
+  }
+
+  node verifier {
+    title: "Claim Verifier"
+    icon: "check"
+
+    fill: "#FFF7ED"
+    stroke: "#F97316"
+    text: "#7C2D12"
+
+    stroke_width: 2
+    radius: 24
+    padding: 26
+
+    x: 1160
+    y: 330
+    w: 270
+    h: 150
+
+    title_size: 20
+    title_weight: "700"
+    body_size: 14
+
+    icon_color: "#EA580C"
+    shadow: true
+    shadow_blur: 18
+    shadow_offset_y: 6
+
+    lines: "SUPPORTED|NOT_SUPPORTED|INSUFFICIENT_EVIDENCE"
+  }
+
+  node warning {
+    title: "Abstention"
+    icon: "warning"
+
+    fill: "#FEF2F2"
+    stroke: "#EF4444"
+    text: "#7F1D1D"
+
+    stroke_width: 2
+    radius: 22
+    padding: 22
+
+    x: 810
+    y: 650
+    w: 250
+    h: 130
+
+    rotation: 0
+
+    title_size: 18
+    title_weight: "700"
+    body_size: 14
+
+    icon_color: "#DC2626"
+    shadow: true
+
+    lines: "Evidence unavailable|Do not infer fabrication"
+  }
+
+  node result {
+    title: "Final Result"
+    icon: "chart"
+
+    fill: "#EFF6FF"
+    stroke: "#0EA5E9"
+    text: "#0C4A6E"
+
+    stroke_width: 2
+    radius: 26
+    padding: 28
+
+    x: 1160
+    y: 650
+    w: 270
+    h: 130
+
+    title_size: 20
+    title_weight: "700"
+    body_size: 14
+
+    icon_color: "#0284C7"
+    shadow: true
+    shadow_blur: 20
+    shadow_offset_y: 7
+
+    lines: "AUTHENTIC|FABRICATED|ABSTAIN"
+  }
+
+  edge input -> translate {
+    route: curve
+    curve: 55
+    stroke: "#4F7DF3"
+    width: 2.5
+    label: "translate"
+    label_color: "#3159B7"
+    label_size: 13
+  }
+
+  edge translate -> retrieval {
+    route: orthogonal
+    corner_radius: 18
+    stroke: "#10B981"
+    width: 2.5
+    label: "semantic query"
+    label_color: "#047857"
+  }
+
+  edge input -> retrieval {
+    route: straight
+    stroke: "#94A3B8"
+    width: 1.8
+    dash: "7 5"
+    opacity: 0.75
+    label: "direct multilingual"
+    label_color: "#64748B"
+  }
+
+  edge retrieval -> verifier {
+    route: straight
+    stroke: "#8B5CF6"
+    width: 2.5
+    label: "evidence"
+    label_color: "#6D28D9"
+  }
+
+  edge verifier -> result {
+    route: orthogonal
+    corner_radius: 20
+    stroke: "#0EA5E9"
+    width: 2.5
+    label: "decision"
+    label_color: "#0369A1"
+  }
+
+  edge verifier -> warning {
+    route: curve
+    curve: 65
+    stroke: "#EF4444"
+    width: 2
+    dash: "6 5"
+    label: "cannot verify"
+    label_color: "#B91C1C"
+  }
+
+  edge warning -> retrieval {
+    route: curve
+    curve: 80
+    stroke: "#F97316"
+    width: 2
+    dash: "5 5"
+    label: "retrieve again"
+    label_color: "#C2410C"
+  }
+}

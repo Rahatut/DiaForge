@@ -1,0 +1,509 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1500" height="900" viewBox="0 0 1500 900" role="img" aria-label="DiaForge Visual Test">
+
+        <defs>
+
+            <filter
+                id="node-shadow"
+                x="-30%"
+                y="-30%"
+                width="160%"
+                height="170%"
+            >
+                <feDropShadow
+                    dx="0"
+                    dy="6"
+                    stdDeviation="10"
+                    flood-color="#64748B"
+                    flood-opacity="0.18"
+                />
+            </filter>
+
+            <filter
+                id="small-shadow"
+                x="-30%"
+                y="-30%"
+                width="160%"
+                height="170%"
+            >
+                <feDropShadow
+                    dx="0"
+                    dy="3"
+                    stdDeviation="5"
+                    flood-color="#64748B"
+                    flood-opacity="0.14"
+                />
+            </filter>
+
+            
+                <marker
+                    id="arrow-0EA5E9"
+                    viewBox="0 0 10 10"
+                    refX="8"
+                    refY="5"
+                    markerWidth="8"
+                    markerHeight="8"
+                    orient="auto"
+                    markerUnits="strokeWidth"
+                >
+                    <path
+                        d="M 0 0 L 10 5 L 0 10 Z"
+                        fill="#0EA5E9"
+                    />
+                </marker>
+                
+                <marker
+                    id="arrow-10B981"
+                    viewBox="0 0 10 10"
+                    refX="8"
+                    refY="5"
+                    markerWidth="8"
+                    markerHeight="8"
+                    orient="auto"
+                    markerUnits="strokeWidth"
+                >
+                    <path
+                        d="M 0 0 L 10 5 L 0 10 Z"
+                        fill="#10B981"
+                    />
+                </marker>
+                
+                <marker
+                    id="arrow-4F7DF3"
+                    viewBox="0 0 10 10"
+                    refX="8"
+                    refY="5"
+                    markerWidth="8"
+                    markerHeight="8"
+                    orient="auto"
+                    markerUnits="strokeWidth"
+                >
+                    <path
+                        d="M 0 0 L 10 5 L 0 10 Z"
+                        fill="#4F7DF3"
+                    />
+                </marker>
+                
+                <marker
+                    id="arrow-8B5CF6"
+                    viewBox="0 0 10 10"
+                    refX="8"
+                    refY="5"
+                    markerWidth="8"
+                    markerHeight="8"
+                    orient="auto"
+                    markerUnits="strokeWidth"
+                >
+                    <path
+                        d="M 0 0 L 10 5 L 0 10 Z"
+                        fill="#8B5CF6"
+                    />
+                </marker>
+                
+                <marker
+                    id="arrow-94A3B8"
+                    viewBox="0 0 10 10"
+                    refX="8"
+                    refY="5"
+                    markerWidth="8"
+                    markerHeight="8"
+                    orient="auto"
+                    markerUnits="strokeWidth"
+                >
+                    <path
+                        d="M 0 0 L 10 5 L 0 10 Z"
+                        fill="#94A3B8"
+                    />
+                </marker>
+                
+                <marker
+                    id="arrow-EF4444"
+                    viewBox="0 0 10 10"
+                    refX="8"
+                    refY="5"
+                    markerWidth="8"
+                    markerHeight="8"
+                    orient="auto"
+                    markerUnits="strokeWidth"
+                >
+                    <path
+                        d="M 0 0 L 10 5 L 0 10 Z"
+                        fill="#EF4444"
+                    />
+                </marker>
+                
+                <marker
+                    id="arrow-F97316"
+                    viewBox="0 0 10 10"
+                    refX="8"
+                    refY="5"
+                    markerWidth="8"
+                    markerHeight="8"
+                    orient="auto"
+                    markerUnits="strokeWidth"
+                >
+                    <path
+                        d="M 0 0 L 10 5 L 0 10 Z"
+                        fill="#F97316"
+                    />
+                </marker>
+                
+
+        </defs>
+        
+<rect x="0" y="0" width="1500" height="900" fill="#F6F8FC" />
+<g class="diaforge-edge">
+<path d="M 330 405 Q 431.931 343.680 440 225" fill="none" stroke="#4F7DF3" stroke-width="2.500" stroke-linecap="round" stroke-linejoin="round" opacity="1" marker-end="url(#arrow-4F7DF3)"/>
+
+        <g class="diaforge-edge-label">
+
+            <rect
+                x="369.965"
+                y="301.340"
+                width="77"
+                height="24"
+                rx="8"
+                fill="#FFFFFF"
+                fill-opacity="0.94"
+                stroke="#E2E8F0"
+                stroke-width="0.8"
+            />
+
+            <text
+                x="408.465"
+                y="317.340"
+                font-family="Inter, Arial, sans-serif"
+                font-size="13"
+                font-weight="600"
+                fill="#3159B7"
+                text-anchor="middle"
+            >
+                translate
+            </text>
+
+        </g>
+        
+</g>
+<g class="diaforge-edge">
+<path d="M 700 225 L 722 225 Q 740 225 740 243 L 740 387 Q 740 405 758 405 L 780 405" fill="none" stroke="#10B981" stroke-width="2.500" stroke-linecap="round" stroke-linejoin="round" opacity="1" marker-end="url(#arrow-10B981)"/>
+
+        <g class="diaforge-edge-label">
+
+            <rect
+                x="684"
+                y="287"
+                width="112"
+                height="24"
+                rx="8"
+                fill="#FFFFFF"
+                fill-opacity="0.94"
+                stroke="#E2E8F0"
+                stroke-width="0.8"
+            />
+
+            <text
+                x="740"
+                y="303"
+                font-family="Inter, Arial, sans-serif"
+                font-size="14"
+                font-weight="600"
+                fill="#047857"
+                text-anchor="middle"
+            >
+                semantic query
+            </text>
+
+        </g>
+        
+</g>
+<g class="diaforge-edge">
+<path d="M 330 405 L 780 405" fill="none" stroke="#94A3B8" stroke-width="1.800" stroke-linecap="round" stroke-linejoin="round" opacity="0.750" stroke-dasharray="7 5" marker-end="url(#arrow-94A3B8)"/>
+
+        <g class="diaforge-edge-label">
+
+            <rect
+                x="481.500"
+                y="377"
+                width="147"
+                height="24"
+                rx="8"
+                fill="#FFFFFF"
+                fill-opacity="0.94"
+                stroke="#E2E8F0"
+                stroke-width="0.8"
+            />
+
+            <text
+                x="555"
+                y="393"
+                font-family="Inter, Arial, sans-serif"
+                font-size="14"
+                font-weight="600"
+                fill="#64748B"
+                text-anchor="middle"
+            >
+                direct multilingual
+            </text>
+
+        </g>
+        
+</g>
+<g class="diaforge-edge">
+<path d="M 1060 405 L 1160 405" fill="none" stroke="#8B5CF6" stroke-width="2.500" stroke-linecap="round" stroke-linejoin="round" opacity="1" marker-end="url(#arrow-8B5CF6)"/>
+
+        <g class="diaforge-edge-label">
+
+            <rect
+                x="1075"
+                y="377"
+                width="70"
+                height="24"
+                rx="8"
+                fill="#FFFFFF"
+                fill-opacity="0.94"
+                stroke="#E2E8F0"
+                stroke-width="0.8"
+            />
+
+            <text
+                x="1110"
+                y="393"
+                font-family="Inter, Arial, sans-serif"
+                font-size="14"
+                font-weight="600"
+                fill="#6D28D9"
+                text-anchor="middle"
+            >
+                evidence
+            </text>
+
+        </g>
+        
+</g>
+<g class="diaforge-edge">
+<path d="M 1430 405 L 1315 405 Q 1295 405 1295 425 L 1295 695 Q 1295 715 1275 715 L 1160 715" fill="none" stroke="#0EA5E9" stroke-width="2.500" stroke-linecap="round" stroke-linejoin="round" opacity="1" marker-end="url(#arrow-0EA5E9)"/>
+
+        <g class="diaforge-edge-label">
+
+            <rect
+                x="1260"
+                y="532"
+                width="70"
+                height="24"
+                rx="8"
+                fill="#FFFFFF"
+                fill-opacity="0.94"
+                stroke="#E2E8F0"
+                stroke-width="0.8"
+            />
+
+            <text
+                x="1295"
+                y="548"
+                font-family="Inter, Arial, sans-serif"
+                font-size="14"
+                font-weight="600"
+                fill="#0369A1"
+                text-anchor="middle"
+            >
+                decision
+            </text>
+
+        </g>
+        
+</g>
+<g class="diaforge-edge">
+<path d="M 1430 405 Q 1090.931 501.862 810 715" fill="none" stroke="#EF4444" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" opacity="1" stroke-dasharray="6 5" marker-end="url(#arrow-EF4444)"/>
+
+        <g class="diaforge-edge-label">
+
+            <rect
+                x="1052.966"
+                y="502.931"
+                width="105"
+                height="24"
+                rx="8"
+                fill="#FFFFFF"
+                fill-opacity="0.94"
+                stroke="#E2E8F0"
+                stroke-width="0.8"
+            />
+
+            <text
+                x="1105.466"
+                y="518.931"
+                font-family="Inter, Arial, sans-serif"
+                font-size="14"
+                font-weight="600"
+                fill="#B91C1C"
+                text-anchor="middle"
+            >
+                cannot verify
+            </text>
+
+        </g>
+        
+</g>
+<g class="diaforge-edge">
+<path d="M 1060 715 Q 979.368 506.377 780 405" fill="none" stroke="#F97316" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" opacity="1" stroke-dasharray="5 5" marker-end="url(#arrow-F97316)"/>
+
+        <g class="diaforge-edge-label">
+
+            <rect
+                x="893.684"
+                y="505.189"
+                width="112"
+                height="24"
+                rx="8"
+                fill="#FFFFFF"
+                fill-opacity="0.94"
+                stroke="#E2E8F0"
+                stroke-width="0.8"
+            />
+
+            <text
+                x="949.684"
+                y="521.189"
+                font-family="Inter, Arial, sans-serif"
+                font-size="14"
+                font-weight="600"
+                fill="#C2410C"
+                text-anchor="middle"
+            >
+                retrieve again
+            </text>
+
+        </g>
+        
+</g>
+<g id="node-input" opacity="1" transform="rotate(0 205 405)">
+
+            <rect
+                x="80"
+                y="330"
+                width="250"
+                height="150"
+                rx="24"
+                ry="24"
+                fill="#E8F1FF"
+                stroke="#4F7DF3"
+                stroke-width="2"
+                filter="url(#node-shadow)"
+            />
+            
+<g transform="translate(106.0,356.0) scale(1.08333)" fill="none" stroke="#2563EB" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5c0-2 16-2 16 0v14c0 2-16 2-16 0z"/><path d="M4 5c0 2 16 2 16 0"/><path d="M4 12c0 2 16 2 16 0"/></g>
+<text x="144" y="376" font-family="Inter, Arial, sans-serif" font-size="20" font-weight="700" fill="#172554" text-anchor="start" dominant-baseline="alphabetic">Input Data</text>
+<text x="106" y="405" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="400" fill="#172554" text-anchor="start" dominant-baseline="alphabetic">English claims</text>
+<text x="106" y="426" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="400" fill="#172554" text-anchor="start" dominant-baseline="alphabetic">Bangla claims</text>
+<text x="106" y="447" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="400" fill="#172554" text-anchor="start" dominant-baseline="alphabetic">Arabic evidence</text>
+
+</g>
+<g id="node-translate" opacity="1" transform="rotate(0 570 225)">
+
+            <rect
+                x="440"
+                y="150"
+                width="260"
+                height="150"
+                rx="24"
+                ry="24"
+                fill="#ECFDF5"
+                stroke="#10B981"
+                stroke-width="2"
+                filter="url(#node-shadow)"
+            />
+            
+<g transform="translate(466.0,176.0) scale(1.08333)" fill="none" stroke="#059669" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2h8l4 4v16H6z"/><path d="M14 2v5h5"/><path d="M9 12h6M9 16h6"/></g>
+<text x="504" y="196" font-family="Inter, Arial, sans-serif" font-size="20" font-weight="700" fill="#064E3B" text-anchor="start" dominant-baseline="alphabetic">Translation</text>
+<text x="466" y="225" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="400" fill="#064E3B" text-anchor="start" dominant-baseline="alphabetic">Bangla to English</text>
+<text x="466" y="246" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="400" fill="#064E3B" text-anchor="start" dominant-baseline="alphabetic">Query normalization</text>
+<text x="466" y="267" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="400" fill="#064E3B" text-anchor="start" dominant-baseline="alphabetic">Semantic preservation</text>
+
+</g>
+<g id="node-retrieval" opacity="1" transform="rotate(0 920 405)">
+
+            <rect
+                x="780"
+                y="330"
+                width="280"
+                height="150"
+                rx="24"
+                ry="24"
+                fill="#F3E8FF"
+                stroke="#8B5CF6"
+                stroke-width="2"
+                filter="url(#node-shadow)"
+            />
+            
+<g transform="translate(806.0,356.0) scale(1.08333)" fill="none" stroke="#7C3AED" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="6" width="12" height="12" rx="2"/><path d="M9 1v5M15 1v5M9 18v5M15 18v5M1 9h5M18 9h5M1 15h5M18 15h5"/></g>
+<text x="844" y="376" font-family="Inter, Arial, sans-serif" font-size="20" font-weight="700" fill="#3B0764" text-anchor="start" dominant-baseline="alphabetic">Dense Retrieval</text>
+<text x="806" y="405" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="400" fill="#3B0764" text-anchor="start" dominant-baseline="alphabetic">BGE-M3 embeddings</text>
+<text x="806" y="426" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="400" fill="#3B0764" text-anchor="start" dominant-baseline="alphabetic">Top-k evidence</text>
+<text x="806" y="447" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="400" fill="#3B0764" text-anchor="start" dominant-baseline="alphabetic">Multilingual matching</text>
+
+</g>
+<g id="node-verifier" opacity="1" transform="rotate(0 1295 405)">
+
+            <rect
+                x="1160"
+                y="330"
+                width="270"
+                height="150"
+                rx="24"
+                ry="24"
+                fill="#FFF7ED"
+                stroke="#F97316"
+                stroke-width="2"
+                filter="url(#node-shadow)"
+            />
+            
+<g transform="translate(1186.0,356.0) scale(1.08333)" fill="none" stroke="#EA580C" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M7 12l3 3 7-7"/></g>
+<text x="1224" y="376" font-family="Inter, Arial, sans-serif" font-size="20" font-weight="700" fill="#7C2D12" text-anchor="start" dominant-baseline="alphabetic">Claim Verifier</text>
+<text x="1186" y="405" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="400" fill="#7C2D12" text-anchor="start" dominant-baseline="alphabetic">SUPPORTED</text>
+<text x="1186" y="426" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="400" fill="#7C2D12" text-anchor="start" dominant-baseline="alphabetic">NOT_SUPPORTED</text>
+<text x="1186" y="447" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="400" fill="#7C2D12" text-anchor="start" dominant-baseline="alphabetic">INSUFFICIENT_EVIDENCE</text>
+
+</g>
+<g id="node-warning" opacity="1" transform="rotate(0 935 715)">
+
+            <rect
+                x="810"
+                y="650"
+                width="250"
+                height="130"
+                rx="22"
+                ry="22"
+                fill="#FEF2F2"
+                stroke="#EF4444"
+                stroke-width="2"
+                filter="url(#node-shadow)"
+            />
+            
+<g transform="translate(832.0,672.0) scale(1.08333)" fill="none" stroke="#DC2626" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l10 18H2z"/><path d="M12 9v5"/><path d="M12 17v1"/></g>
+<text x="870" y="690" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="700" fill="#7F1D1D" text-anchor="start" dominant-baseline="alphabetic">Abstention</text>
+<text x="832" y="719" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="400" fill="#7F1D1D" text-anchor="start" dominant-baseline="alphabetic">Evidence unavailable</text>
+<text x="832" y="740" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="400" fill="#7F1D1D" text-anchor="start" dominant-baseline="alphabetic">Do not infer fabrication</text>
+
+</g>
+<g id="node-result" opacity="1" transform="rotate(0 1295 715)">
+
+            <rect
+                x="1160"
+                y="650"
+                width="270"
+                height="130"
+                rx="26"
+                ry="26"
+                fill="#EFF6FF"
+                stroke="#0EA5E9"
+                stroke-width="2"
+                filter="url(#node-shadow)"
+            />
+            
+<g transform="translate(1188.0,678.0) scale(1.08333)" fill="none" stroke="#0284C7" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20V4"/><path d="M4 20h17"/><path d="M7 16l4-5 3 2 5-7"/></g>
+<text x="1226" y="698" font-family="Inter, Arial, sans-serif" font-size="20" font-weight="700" fill="#0C4A6E" text-anchor="start" dominant-baseline="alphabetic">Final Result</text>
+<text x="1188" y="727" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="400" fill="#0C4A6E" text-anchor="start" dominant-baseline="alphabetic">AUTHENTIC</text>
+<text x="1188" y="748" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="400" fill="#0C4A6E" text-anchor="start" dominant-baseline="alphabetic">FABRICATED</text>
+<text x="1188" y="769" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="400" fill="#0C4A6E" text-anchor="start" dominant-baseline="alphabetic">ABSTAIN</text>
+
+</g>
+</svg>
