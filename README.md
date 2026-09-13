@@ -2,6 +2,8 @@
 
 Declarative SVG diagram generation engine with a custom `.dia` language.
 
+![DiaForge Visual Test](examples/visual_test.svg)
+
 ## Features
 
 - Nodes and relationships
@@ -69,6 +71,7 @@ DiaForge/
 ├── examples/
 ├── tests/
 ├── pyproject.toml
+├── LICENSE
 └── README.md
 ```
 
